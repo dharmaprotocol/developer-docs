@@ -78,7 +78,7 @@ This token is called a **Debt Token**. Ownership of this Debt Token entitles the
 
 <!-- [Insert illustration here of 1. Repayment happening, 2. Debt Token getting transferred and 3. New repayment happening and going to new person] -->
 
-Each Debt Token has an `agreementId` -- a unique 32-byte identifier that is generated deterministically from the associated debt's terms (this is elaborated on in the [Whitepaper](https://whitepaper.dharma.io)). Each `agreementId` is mapped on-chain to the address of a deployed **Terms Contract** and a set of **Terms Contract Parameters** specific to that Debt Token.
+Each Debt Token has an `agreementId` -- a unique 32-byte identifier that is generated deterministically from the associated debt's terms. Each `agreementId` is mapped on-chain to the address of a deployed **Terms Contract** and a set of **Terms Contract Parameters** specific to that Debt Token.
 
 This means that anyone who's interested in what the terms and repayment status of a Debt Token are can look up what **Terms Contract** and **Terms Contract Parameters** are associated with that Debt Token's `agreementId`. By knowing the Debt Token's terms contract and associated parameters, one can programmatically answer any and all of the following questions...
 
